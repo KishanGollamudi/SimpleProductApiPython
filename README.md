@@ -1,24 +1,22 @@
-🛍️ SimpleProductApiPython
+# 🛍️ SimpleProductApiPython
 
 A lightweight FastAPI-based product microservice with a beautiful frontend UI for listing products.
 
-🚀 Features
+## 🚀 Features
 
-FastAPI backend (Python 3)
+* FastAPI backend (Python 3)
+* REST product API
+* JSON output & HTML UI
+* Premium CSS Frontend
+* Runs locally or on server
+* Deployable via Nginx + Gunicorn
+* Fully open-source & customizable
 
-REST product API
+---
 
-JSON output & HTML UI
+## 🧠 Project Structure
 
-Premium CSS Frontend
-
-Runs locally or on server
-
-Deployable via Nginx + Gunicorn
-
-Fully open-source & customizable
-
-🧠 Project Structure
+```
 SimpleProductApiPython/
 │
 ├── app.py
@@ -27,38 +25,67 @@ SimpleProductApiPython/
 │   └── style.css
 ├── venv/   (ignored in Git)
 └── README.md
+```
 
-📦 Installation & Setup
-1️⃣ Clone the repository
+---
+
+## 📦 Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
 git clone https://github.com/KishanGollamudi/SimpleProductApiPython.git
 cd SimpleProductApiPython
+```
 
-2️⃣ Create virtual environment
+### 2️⃣ Create virtual environment
+
+```bash
 sudo apt install python3.12-venv -y
 python3 -m venv venv
 source venv/bin/activate
+```
 
-3️⃣ Install dependencies
+### 3️⃣ Install dependencies
+
+```bash
 pip install fastapi uvicorn
+```
 
-▶️ Run App Locally
+---
+
+## ▶️ Run App Locally
+
+```bash
 uvicorn app:app --reload --host 0.0.0.0 --port 5000
-
+```
 
 Open in browser:
 
+```
 http://localhost:5000
-
+```
 
 or on EC2:
 
+```
 http://YOUR_PUBLIC_IP:5000
+```
 
-🔥 API Endpoints
-Method	Endpoint	Description
-GET	/api/products	Returns JSON product list
-GET	/	Renders HTML UI
-💻 Sample API Output
+---
+
+## 🔥 API Endpoints
+
+| Method | Endpoint        | Description               |
+| ------ | --------------- | ------------------------- |
+| GET    | `/api/products` | Returns JSON product list |
+| GET    | `/`             | Renders HTML UI           |
+
+---
+
+## 💻 Sample API Output
+
+```json
 [
   {
     "id": 1,
@@ -73,42 +100,52 @@ GET	/	Renders HTML UI
     "description": "Noise cancelling headphones"
   }
 ]
+```
 
-🔐 .gitignore
+---
+
+## 🔐 .gitignore
 
 We exclude Python venv from Git:
 
+```
 venv/
 __pycache__/
+```
 
-☁️ Deployment
+---
+
+## ☁️ Deployment
 
 This app can be deployed using:
 
-FastAPI + Uvicorn
+* FastAPI + Uvicorn
+* Gunicorn
+* Nginx Reverse Proxy
+* Docker
+* Kubernetes
+* GitHub Actions CI/CD
 
-Gunicorn
+---
 
-Nginx Reverse Proxy
+## 👨‍💻 Author
 
-Docker
-
-Kubernetes
-
-GitHub Actions CI/CD
-
-👨‍💻 Author
-
-Kishan Gollamudi
+**Kishan Gollamudi**
 
 GitHub:
-https://github.com/KishanGollamudi
+[https://github.com/KishanGollamudi](https://github.com/KishanGollamudi)
 
-🤝 Contributing
+---
+
+## 🤝 Contributing
 
 Pull requests welcome.
 Major features or improvements — open an issue first.
 
-📝 License
+---
+
+## 📝 License
 
 This project is open-source and available under the MIT License.
+
+---
